@@ -7,7 +7,8 @@ var babelOptions = {
 }
 module.exports = {
 	entry: {
-		main:'./src/main.js'
+		index:"./src/index.js",
+		demo:"./src/demo.js"
 	},
 	output: {
 		filename: '[name].js',
