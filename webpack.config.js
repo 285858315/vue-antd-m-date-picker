@@ -84,6 +84,8 @@ if(is_prod){
             amd: 'vue'
         }
     }
+	module.exports.output.library = 'vue-template'
+    module.exports.output.libraryTarget = 'umd'
 }else{
 	module.exports.devServer = {
 		contentBase:path.join(__dirname, "dist"),
