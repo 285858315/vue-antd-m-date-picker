@@ -6,7 +6,6 @@ import "normalize.css"
 const minDate = "2015-08-15 12:12:12"
 const maxDate = "2018-01-01 23:59:59"
 const now = "2015-08-16 13:13:00"
-
 const App = new Vue({    
     template:require("./demo.html"),
     data(){
