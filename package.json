@@ -14,7 +14,10 @@
   },
   "license": "ISC",
   "dependencies": {
+    "moment": "^2.17.1",
+    "style-loader": "^0.13.2",
     "vue": "^2.2.1",
+    "vue-antd-m-picker": "^1.0.3",
     "zscroller": "^0.2.5"
   },
   "devDependencies": {
@@ -28,6 +31,7 @@
     "html-loader": "^0.4.5",
     "less": "^2.7.2",
     "less-loader": "^2.2.3",
+    "normalize.css": "^5.0.0",
     "ts-loader": "^2.0.1",
     "typescript": "^2.2.1",
     "uglify-js": "github:mishoo/UglifyJS2#harmony",

@@ -47,6 +47,10 @@ module.exports = {
                test: /\.html$/, 
                loader: "html-loader?attrs=false"
             },
+			{ 
+               test: /\.css$/, 
+               loader: "style-loader!css-loader"
+            },
 		]
 	},
 	resolve: {
@@ -82,9 +86,15 @@ if(is_prod){
             commonjs: 'vue',
             commonjs2: 'vue',
             amd: 'vue'
+        },
+		moment: {
+            root: 'moment',
+            commonjs: 'moment',
+            commonjs2: 'moment',
+            amd: 'moment'
         }
     }
-	module.exports.output.library = 'vue-template'
+	module.exports.output.library = 'vue-antd-m-date-picker'
     module.exports.output.libraryTarget = 'umd'
 }else{
 	module.exports.devServer = {
