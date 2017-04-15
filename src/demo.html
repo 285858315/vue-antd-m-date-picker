@@ -1,0 +1,15 @@
+<div>
+    <h2>date picker</h2>
+    <select v-model="mode">
+        <option v-for="item in list" :value="item">{{item}}</option>
+    </select>
+    <div>
+        <span>{{value}}</span>
+        <DatePicker 
+            @updateValue="updateValue"
+            :mode="mode"
+            :minDate="minDate"
+            :maxDate="maxDate"
+            :value="value"></DatePicker>
+    </div>
+</div>
